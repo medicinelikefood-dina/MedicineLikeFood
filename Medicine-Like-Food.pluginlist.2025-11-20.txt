@@ -1,0 +1,143 @@
+------------------------------------------------------------
+  Plugin list generated with BackWPup version: 5.5.2
+  http://backwpup.com
+  Blog Name: Medicine Like Food
+  Blog URL: https://www.medicinelikefood.com
+  Generated on: 2025-11-20 14:07.49
+------------------------------------------------------------
+
+
+All plugin information:
+------------------------------
+AI ChatBot - WPBot (v.7.4.0) from ChatBot for WordPress - WPBot
+	https://wordpress.org/plugins/chatbot/
+Akismet Anti-spam: Spam Protection (v.5.5) from Automattic - Anti-spam Team
+	https://akismet.com/
+All in One SEO (v.4.8.9) from All in One SEO Team
+	https://aioseo.com/
+BackWPup (v.5.5.2) from BackWPup – WordPress Backup & Restore Plugin
+	https://backwpup.com/
+Bit Assist (v.1.5.10) from Bit Assist - Click to Chat Widget Live Chat Support Chat Button
+	https://bitapps.pro/bit-assist
+Contact Form 7 (v.6.1.3) from Rock Lobster Inc.
+	https://contactform7.com/
+Customer Reviews for WooCommerce (v.5.87.0) from CusRev
+	https://wordpress.org/plugins/customer-reviews-woocommerce/
+Docket Cache (v.24.07.04) from Nawawi Jamili
+	https://docketcache.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash
+DreamHost Panel Login (v.1.0.0) from DreamHost, danielbachhuber
+	https://www.dreamhost.com/wordpress/
+Ecwid by Lightspeed Ecommerce Shopping Cart (v.7.0.4) from Ecwid Ecommerce
+	http://www.ecwid.com?partner=wporg
+Elementor (v.3.32.5) from Elementor.com
+	https://elementor.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash
+Envato Market (v.2.0.12) from Envato
+	https://envato.com/market-plugin/
+EWWW Image Optimizer (v.8.2.1) from Exactly WWW
+	https://wordpress.org/plugins/ewww-image-optimizer/
+Extendify WordPress Onboarding and AI Assistant (v.2.2.2) from Extendify
+	https://extendify.com/?utm_source=wp-plugins&utm_campaign=plugin-uri&utm_medium=wp-dash
+Formilla Live Chat (v.1.4) from Formilla.com
+	http://www.formilla.com
+Google for WooCommerce (v.3.5.0) from WooCommerce
+	
+Hello Dolly (v.1.7.2) from Matt Mullenweg
+	http://wordpress.org/plugins/hello-dolly/
+Image Optimizer - Compress, Resize and Optimize Images (v.1.6.8) from Elementor.com
+	https://go.elementor.com/wp-repo-description-tab-io-product-page/
+Jetpack (v.15.2) from Automattic
+	https://jetpack.com
+LiteSpeed Cache (v.7.6.2) from LiteSpeed Technologies
+	https://www.litespeedtech.com/products/cache-plugins/wordpress-acceleration
+MailPoet (v.5.16.4) from MailPoet
+	https://www.mailpoet.com
+Make Connector (v.1.6.5) from Celonis s.r.o.
+	
+Ninetheme Elementor Addons (v.1.0.5) from Ninetheme
+	http://themeforest.net/user/Ninetheme
+Pinterest for WooCommerce (v.1.4.22) from WooCommerce
+	https://woocommerce.com/products/pinterest-for-woocommerce/
+Post SMTP (v.3.6.1) from Post SMTP
+	https://postmansmtp.com/
+Post SMTP Pro (v.1.4.3) from Post SMTP
+	https://postmansmtp.com/
+Redux Framework (v.4.5.8) from Team Redux
+	https://wordpress.org/plugins/redux-framework
+Safe SVG (v.2.4.0) from 10up
+	https://wordpress.org/plugins/safe-svg/
+Site Assistant (v.1.0.0) from 
+	
+Tidio Chat (v.6.0.29) from Tidio LLC
+	http://www.tidio.com
+UpdraftPlus - Backup/Restore (v.1.25.8) from TeamUpdraft, DavidAnderson
+	https://updraftplus.com
+W3 Total Cache (v.2.8.14) from BoldGrid
+	https://www.boldgrid.com/totalcache/
+WooCommerce (v.10.3.4) from Automattic
+	https://woocommerce.com/
+WooCommerce Payfast Gateway (v.1.7.4) from WooCommerce
+	https://woocommerce.com/products/payfast-payment-gateway/
+WooCommerce Paymaster Payment Gateway (v.0.4.31) from Grishunin Anton
+	http://qazomardok.ru/
+WooCommerce PayPal Payments (v.3.3.0) from PayPal
+	https://woocommerce.com/products/woocommerce-paypal-payments/
+Wordfence Security (v.8.1.2) from Wordfence
+	https://www.wordfence.com/
+WPC Frequently Bought Together for WooCommerce (v.7.7.3) from WPClever
+	https://wpclever.net/
+WP Fastest Cache (v.1.4.1) from Emre Vona
+	http://wordpress.org/plugins/wp-fastest-cache/
+WPForms Lite (v.1.9.8.4) from WPForms
+	https://wpforms.com
+WP Mail SMTP (v.4.6.0) from WP Mail SMTP
+	https://wpmailsmtp.com/
+WP Super Cache (v.3.0.2) from Automattic
+	https://wordpress.org/plugins/wp-super-cache/
+
+Active plugins:
+------------------------------
+AI ChatBot - WPBot
+All in One SEO
+BackWPup
+Contact Form 7
+Customer Reviews for WooCommerce
+DreamHost Panel Login
+Ecwid by Lightspeed Ecommerce Shopping Cart
+Elementor
+Envato Market
+EWWW Image Optimizer
+Extendify WordPress Onboarding and AI Assistant
+Google for WooCommerce
+Image Optimizer - Compress, Resize and Optimize Images
+LiteSpeed Cache
+Make Connector
+Ninetheme Elementor Addons
+Pinterest for WooCommerce
+Post SMTP
+Post SMTP Pro
+Redux Framework
+Safe SVG
+UpdraftPlus - Backup/Restore
+WooCommerce
+WooCommerce Payfast Gateway
+WooCommerce PayPal Payments
+Wordfence Security
+WPC Frequently Bought Together for WooCommerce
+WP Fastest Cache
+
+Inactive plugins:
+------------------------------
+Akismet Anti-spam: Spam Protection
+Bit Assist
+Docket Cache
+Formilla Live Chat
+Hello Dolly
+Jetpack
+MailPoet
+Site Assistant
+Tidio Chat
+W3 Total Cache
+WooCommerce Paymaster Payment Gateway
+WPForms Lite
+WP Mail SMTP
+WP Super Cache

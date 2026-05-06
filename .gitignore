@@ -1,0 +1,17 @@
+wp-content/uploads/
+wp-content/updraft/
+wp-content/backup*/
+wp-content/cache/
+wp-content/wflogs/
+wp-content/w3tc-config/
+wp-content/litespeed/
+wp-content/docket-cache-data/
+wp-content/ewww/
+wp-content/jetpack-waf/
+wp-content/upgrade/
+wp-content/upgrade-temp-backup/
+*.zip
+FTP-Backup-*
+__MACOSX/
+backwpup_readme.txt
+.htaccess
