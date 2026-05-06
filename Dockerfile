@@ -1,0 +1,3 @@
+FROM alpine:latest
+RUN apk add --no-cache mariadb-client curl
+CMD sh -c "curl -o /tmp/db.sql 'https://raw.githubusercontent.com/medicinelikefood-dina/MedicineLikeFood/master/MedicineLikeFood%20(2026-04-29).sql' && mysql -h mysql.railway.internal -u root -prootpassword wordpress < /tmp/db.sql && mysql -h mysql.railway.internal -u root -prootpassword -e "GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'%' IDENTIFIED BY 'wppass'; FLUSH PRIVILEGES;" && mysql -h mysql.railway.internal -u root -prootpassword wordpress -e "UPDATE wp_options SET option_value='https://medicinelikefood-production.up.railway.app' WHERE option_name IN ('siteurl','home');" && echo 'IMPORT COMPLETE'"
