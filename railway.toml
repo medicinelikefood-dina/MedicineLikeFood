@@ -1,0 +1,14 @@
+[build]
+builder = "NIXPACKS"
+
+[build.nixpacksPlan.phases]
+setup = { cmds = ["apt-get update && apt-get install -y default-mysql-client php-mysql php-gd php-mbstring php-xml php-curl php-zip php-intl"] }
+
+[deploy]
+healthcheckPath = "/"
+healthcheckTimeout = 180
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+[service]
+PORT = 80
