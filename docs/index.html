@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Like Food — Nourish. Support. Encourage.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset */
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        :root {
+            --primary: #2c654b;
+            --accent: #10B981;
+            --bg: #ffffff;
+            --text: #333333;
+            --light-bg: #f9fafb;
+            --card-bg: #ffffff;
+            --shadow: 0 2px 8px rgba(0,0,0,0.08);
+            --radius: 12px;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* Header */
+        header {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid #e5e7eb;
+            background: var(--bg);
+        }
+
+        header .brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .brand-name {
+            font-size: 2.2rem;
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .brand-tagline {
+            font-size: 0.95rem;
+            color: #6b7280;
+            margin-top: 0.25rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(135deg, #e6f7ed 0%, #d1fae5 100%);
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: #4b5563;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            background: #25D366;
+            color: #fff;
+            font-weight: 600;
+            padding: 0.9rem 2rem;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .whatsapp-btn:hover {
+            background: #1ebe5b;
+        }
+
+        .whatsapp-icon {
+            margin-right: 0.4rem;
+            font-size: 1.2rem;
+            vertical-align: middle;
+        }
+
+        /* Sections */
+        section {
+            padding: 3rem 0;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        /* Product cards */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: var(--card-bg);
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            overflow: hidden;
+            transition: transform 0.2s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: #f0fdf4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary);
+            font-size: 3rem;
+            font-family: serif;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-info h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-info .desc {
+            font-size: 0.95rem;
+            color: #6b7280;
+            margin-bottom: 1rem;
+            flex: 1;
+        }
+
+        .product-info .price {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .product-info .whatsapp-btn {
+            align-self: flex-start;
+            background: var(--primary);
+            color: #fff;
+            border: 2px solid var(--primary);
+        }
+
+        .product-info .whatsapp-btn:hover {
+            background: #245c43;
+        }
+
+        /* How to Order */
+        .steps-grid {
+            counter-reset: step;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .step {
+            background: var(--light-bg);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .step::before {
+            counter-increment: step;
+            content: counter(step);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+        }
+
+        .step p {
+            font-size: 0.95rem;
+            color: #4b5563;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: #fff;
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+
+        footer .disclaimer {
+            font-size: 0.85rem;
+            max-width: 600px;
+            margin: 1.5rem auto 0;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .brand-name { font-size: 1.8rem; }
+            .hero h1 { font-size: 1.8rem; }
+            h2 { font-size: 1.5rem; }
+            .steps-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand">
+            <div class="brand-name">Medicine Like Food</div>
+            <div class="brand-tagline">Nourish. Support. Encourage.</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Natural Wellness from the Heart of South Africa</h1>
+        <p>We craft herbal remedies — tinctures, capsules, oils, and more — to support your body&rsquo;s innate wisdom. Simple, wholesome, and as nature intended.</p>
+        <a href="https://wa.me/27794389914?text=Hi%20Medicine%20Like%20Food%2C%20I%27d%20like%20to%20order" class="whatsapp-btn" target="_blank">
+            <span class="whatsapp-icon">📱</span> Order via WhatsApp
+        </a>
+    </section>
+
+    <section class="container">
+        <h2>Best Sellers</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-image">🌿</div>
+                <div class="product-info">
+                    <h3>Detoxone Spray Tincture</h3>
+                    <p class="desc">Gentle detox support for liver, lymph, bloodstream &amp; bowel. 50ml spray bottle for easy daily use.</p>
+                    <div class="price">R350</div>
+                    <a href="https://wa.me/27794389914?text=Hi%2C%20I%27d%20like%20to%20order%201x%20Detoxone%20Spray%20Tincture" class="whatsapp-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🩸</div>
+                <div class="product-info">
+                    <h3>Blood Cleanser Capsules</h3>
+                    <p class="desc">Herbal blood cleanse &amp; detox formula with Tulsi, Burdock, Dandelion, Red Clover, Nettle &amp; Turmeric. 60 capsules.</p>
+                    <div class="price">R280</div>
+                    <a href="https://wa.me/27794389914?text=Hi%2C%20I%27d%20like%20to%20order%201x%20Blood%20Cleanser%20Capsules" class="whatsapp-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image">🥥</div>
+                <div class="product-info">
+                    <h3>CocoCanna</h3>
+                    <p class="desc">Double‑strength cannabis coconut oil extract. 40g — versatile topical or internal use. Supports relaxation &amp; comfort.</p>
+                    <div class="price">R400</div>
+                    <a href="https://wa.me/27794389914?text=Hi%2C%20I%27d%20like%20to%20order%201x%20CocoCanna%20Double%20Strength" class="whatsapp-btn" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: #f0fdf4;">
+        <div class="container">
+            <h2>How to Order</h2>
+            <div class="steps-grid">
+                <div class="step">
+                    <p>WhatsApp us at <strong>+27 79 438 9914</strong> with your order.</p>
+                </div>
+                <div class="step">
+                    <p>We’ll confirm stock and send you our FNB bank details.</p>
+                </div>
+                <div class="step">
+                    <p>Pay via FNB bank transfer (branch 250655). Account holder: Medicine Like Food.</p>
+                </div>
+                <div class="step">
+                    <p>Send us your proof of payment.</p>
+                </div>
+                <div class="step">
+                    <p>We dispatch your order with tracking — and follow up to make sure it arrived safely.</p>
+                </div>
+            </div>
+            <p style="text-align:center; margin-top:2rem; color:#6b7280;">Simple, warm, and personal — just like our remedies 🌱</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>📧 <a href="mailto:contact@medicinelikefood.com" style="color:#fff;">contact@medicinelikefood.com</a> | 📱 <a href="https://wa.me/27794389914" style="color:#fff;">+27 79 438 9914</a></p>
+        <p>🌍 www.medicinelikefood.com</p>
+        <p class="disclaimer">Our products are not intended to diagnose, treat, cure, or prevent any disease.</p>
+    </footer>
+
+    <!-- Minimal JS for WhatsApp buttons (optional; already using anchor) -->
+    <script>
+        // Can add event listeners if needed, but plain anchor works fine.
+        document.querySelectorAll('.whatsapp-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                // Simple tracking could go here
+            });
+        });
+    </script>
+</body>
+</html>
